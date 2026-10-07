@@ -1,0 +1,870 @@
+/* ============================================
+   ESNAFPANO — CSS ICON SİSTEMİ
+   Tüm ikonlar pure CSS ile üretilmiştir.
+   Emoji kullanımı yasaktır.
+   ============================================ */
+
+/* === TEMEL İKON KAPSAYICISI === */
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+/* ===========================
+   UYARI / ALERT İKONU (⚠️)
+=========================== */
+.icon-warning {
+  width: 18px;
+  height: 18px;
+}
+.icon-warning::before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 16px solid #f59e0b;
+  border-radius: 2px;
+}
+.icon-warning::after {
+  content: '!';
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 9px;
+  font-weight: 900;
+  color: #000;
+  line-height: 1;
+}
+
+/* ===========================
+   ARAMA / BÜYÜTEÇ (🔍)
+=========================== */
+.icon-search {
+  width: 18px;
+  height: 18px;
+  position: relative;
+}
+.icon-search::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 11px;
+  height: 11px;
+  border: 2.5px solid currentColor;
+  border-radius: 50%;
+}
+.icon-search::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 7px;
+  height: 2.5px;
+  background: currentColor;
+  transform: rotate(-45deg);
+  transform-origin: right center;
+  border-radius: 2px;
+}
+
+/* ===========================
+   KONUM / PIN (📍)
+=========================== */
+.icon-pin {
+  width: 14px;
+  height: 18px;
+  position: relative;
+}
+.icon-pin::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  background: currentColor;
+  border-radius: 50% 50% 50% 0;
+  transform: translateX(-50%) rotate(-45deg);
+}
+.icon-pin::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 4px;
+  background: currentColor;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+/* ===========================
+   YILDIZ (⭐)
+=========================== */
+.icon-star {
+  width: 16px;
+  height: 16px;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  background: currentColor;
+}
+.icon-star-outline {
+  width: 16px;
+  height: 16px;
+  position: relative;
+}
+.icon-star-outline::before {
+  content: '★';
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 1;
+  color: currentColor;
+}
+
+/* ===========================
+   EV / ANA SAYFA (🏠)
+=========================== */
+.icon-home {
+  width: 18px;
+  height: 18px;
+  position: relative;
+}
+.icon-home::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: currentColor;
+  clip-path: polygon(0 100%, 0 40%, 50% 40%, 50% 100%);
+}
+.icon-home::after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: currentColor;
+  clip-path: polygon(100% 100%, 100% 40%, 50% 40%, 50% 100%);
+}
+
+/* ===========================
+   EVRAk / ÇANTA (💼)
+=========================== */
+.icon-briefcase {
+  width: 18px;
+  height: 14px;
+  background: currentColor;
+  border-radius: 2px;
+  position: relative;
+}
+.icon-briefcase::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 4px;
+  border: 2px solid currentColor;
+  border-bottom: none;
+  border-radius: 2px 2px 0 0;
+  background: transparent;
+}
+.icon-briefcase::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #fff;
+  transform: translateY(-50%);
+  opacity: 0.4;
+}
+
+/* ===========================
+   DÜKKÂN / MAĞAZA (🏪)
+=========================== */
+.icon-store {
+  width: 18px;
+  height: 16px;
+  position: relative;
+}
+.icon-store::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 2px;
+  right: 2px;
+  height: 10px;
+  background: currentColor;
+  border-radius: 1px;
+}
+.icon-store::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 7px;
+  background: currentColor;
+  clip-path: polygon(0 100%, 15% 0%, 85% 0%, 100% 100%);
+  border-radius: 2px 2px 0 0;
+}
+
+/* ===========================
+   ANAHTAR / ALET (🔧)
+=========================== */
+.icon-wrench {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  transform: rotate(-45deg);
+}
+.icon-wrench::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  background: transparent;
+}
+.icon-wrench::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 12px;
+  background: currentColor;
+  border-radius: 0 0 2px 2px;
+}
+
+/* ===========================
+   TELEFON (📞)
+=========================== */
+.icon-phone {
+  width: 16px;
+  height: 16px;
+  position: relative;
+}
+.icon-phone::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: currentColor;
+  clip-path: path('M2 1.5C2 1.22 2.22 1 2.5 1H5.5C5.78 1 6 1.22 6 1.5V4C6 4.28 5.78 4.5 5.5 4.5H4.5C4.5 4.5 4 6 5 8C6 10 7.5 10.5 7.5 10.5V9.5C7.5 9.22 7.72 9 8 9H10.5C10.78 9 11 9.22 11 9.5V12.5C11 12.78 10.78 13 10.5 13H9.5C5.36 13 2 9.64 2 5.5V1.5Z');
+}
+
+/* ===========================
+   KAMERA / FOTOĞRAF (📷)
+=========================== */
+.icon-camera {
+  width: 18px;
+  height: 14px;
+  background: currentColor;
+  border-radius: 2px;
+  position: relative;
+}
+.icon-camera::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 4px;
+  width: 6px;
+  height: 4px;
+  background: currentColor;
+  border-radius: 2px 2px 0 0;
+}
+.icon-camera::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+/* ===========================
+   KALEM / BELGE (📝)
+=========================== */
+.icon-edit {
+  width: 16px;
+  height: 16px;
+  position: relative;
+}
+.icon-edit::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 13px;
+  background: currentColor;
+  border-radius: 1px;
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 75% 100%, 0 100%);
+}
+.icon-edit::after {
+  content: '';
+  position: absolute;
+  top: 9px;
+  right: 0;
+  width: 8px;
+  height: 2px;
+  background: currentColor;
+  transform: rotate(-45deg);
+  border-radius: 1px;
+}
+
+/* ===========================
+   ONAY / TAMAMLANDI (✅)
+=========================== */
+.icon-check {
+  width: 16px;
+  height: 16px;
+  background: #22c55e;
+  border-radius: 50%;
+  position: relative;
+}
+.icon-check::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 4px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: translate(-50%, -60%) rotate(-45deg);
+}
+.icon-check-plain {
+  width: 16px;
+  height: 16px;
+  position: relative;
+}
+.icon-check-plain::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 5px;
+  border-left: 2.5px solid currentColor;
+  border-bottom: 2.5px solid currentColor;
+  transform: translate(-50%, -60%) rotate(-45deg);
+}
+
+/* ===========================
+   KAPAT / ÇARPRAZ (✕)
+=========================== */
+.icon-close {
+  width: 14px;
+  height: 14px;
+  position: relative;
+}
+.icon-close::before,
+.icon-close::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  border-radius: 1px;
+}
+.icon-close::before { transform: translateY(-50%) rotate(45deg); }
+.icon-close::after  { transform: translateY(-50%) rotate(-45deg); }
+
+/* ===========================
+   BILGI / AMPÜL (💡)
+=========================== */
+.icon-info {
+  width: 18px;
+  height: 18px;
+  background: currentColor;
+  border-radius: 50%;
+  position: relative;
+}
+.icon-info::after {
+  content: 'i';
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 900;
+  font-style: italic;
+  color: #fff;
+  line-height: 1;
+}
+
+/* ===========================
+   KALKAN / GÜVENLIK (🛡️)
+=========================== */
+.icon-shield {
+  width: 14px;
+  height: 16px;
+  background: currentColor;
+  clip-path: polygon(50% 0%, 100% 15%, 100% 55%, 50% 100%, 0% 55%, 0% 15%);
+  position: relative;
+}
+
+/* ===========================
+   ARTIK / EKLE (+)
+=========================== */
+.icon-plus {
+  width: 16px;
+  height: 16px;
+  position: relative;
+}
+.icon-plus::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  transform: translateY(-50%);
+  border-radius: 1px;
+}
+.icon-plus::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: currentColor;
+  transform: translateX(-50%);
+  border-radius: 1px;
+}
+
+/* ===========================
+   YUKARIYA OK (↑)
+=========================== */
+.icon-arrow-up {
+  width: 14px;
+  height: 14px;
+  position: relative;
+}
+.icon-arrow-up::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 7px solid currentColor;
+}
+.icon-arrow-up::after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 6px;
+  background: currentColor;
+  border-radius: 1px;
+}
+
+/* ===========================
+   GÖZ (👁)
+=========================== */
+.icon-eye {
+  width: 18px;
+  height: 12px;
+  position: relative;
+}
+.icon-eye::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 2px solid currentColor;
+  border-radius: 50% / 80%;
+}
+.icon-eye::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 5px;
+  height: 5px;
+  background: currentColor;
+  border-radius: 50%;
+}
+
+/* ===========================
+   TAKVİM (📅)
+=========================== */
+.icon-calendar {
+  width: 16px;
+  height: 16px;
+  border: 2px solid currentColor;
+  border-radius: 3px;
+  position: relative;
+}
+.icon-calendar::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 2px;
+  width: 2px;
+  height: 4px;
+  background: currentColor;
+  border-radius: 1px;
+}
+.icon-calendar::after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  right: 2px;
+  width: 2px;
+  height: 4px;
+  background: currentColor;
+  border-radius: 1px;
+}
+
+/* ===========================
+   WHATSAPP
+=========================== */
+.icon-whatsapp {
+  width: 18px;
+  height: 18px;
+  background: currentColor;
+  border-radius: 50%;
+  position: relative;
+}
+.icon-whatsapp::after {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: transparent;
+  clip-path: polygon(30% 40%, 55% 30%, 70% 50%, 60% 65%, 40% 60%);
+}
+
+/* ===========================
+   MENU / HAMBURGEr
+=========================== */
+.icon-menu {
+  width: 20px;
+  height: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.icon-menu span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  border-radius: 1px;
+  transition: all 0.3s;
+}
+
+/* ===========================
+   FILTRE
+=========================== */
+.icon-filter {
+  width: 16px;
+  height: 14px;
+  position: relative;
+}
+.icon-filter::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: currentColor;
+  border-radius: 1px;
+  box-shadow:
+    0 5px 0 currentColor,
+    0 10px 0 currentColor;
+}
+
+/* ===========================
+   ÇIKIS YAPMA
+=========================== */
+.icon-logout {
+  width: 16px;
+  height: 16px;
+  position: relative;
+}
+.icon-logout::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 9px;
+  height: 16px;
+  border: 2px solid currentColor;
+  border-right: none;
+  border-radius: 2px 0 0 2px;
+}
+.icon-logout::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 9px;
+  height: 2px;
+  background: currentColor;
+  transform: translateY(-50%);
+}
+
+/* ===========================
+   ROKET / GÖNDER (🚀)
+=========================== */
+.icon-rocket {
+  width: 14px;
+  height: 18px;
+  background: currentColor;
+  clip-path: polygon(50% 0%, 85% 60%, 100% 100%, 50% 80%, 0% 100%, 15% 60%);
+  position: relative;
+}
+
+/* ===========================
+   KADEME / STEP İKONLAR
+=========================== */
+.icon-step-location {
+  width: 20px;
+  height: 20px;
+  background: currentColor;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  position: relative;
+}
+.icon-step-location::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+/* ===========================
+   DÖNEN YÜKLEYICI
+=========================== */
+.icon-spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(0,0,0,0.1);
+  border-top: 3px solid currentColor;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* ===========================
+   KONFETI / KUTLAMA (🎉)
+=========================== */
+.icon-celebrate {
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+.icon-celebrate::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 2px;
+  width: 6px;
+  height: 12px;
+  background: linear-gradient(180deg, #FF9900, #f59e0b);
+  border-radius: 3px;
+  transform: rotate(-30deg);
+}
+.icon-celebrate::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 4px;
+  height: 8px;
+  background: linear-gradient(180deg, #22c55e, #16a34a);
+  border-radius: 2px;
+  transform: rotate(20deg);
+}
+
+/* ===========================
+   SOSyal MEDYA İKONLAR
+=========================== */
+.icon-facebook {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  font-size: 14px;
+  font-weight: 900;
+  color: currentColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-facebook::after { content: 'f'; }
+
+.icon-linkedin::after { content: 'in'; font-size: 10px; }
+.icon-twitter::after  { content: 'tw'; font-size: 9px; }
+.icon-linkedin,
+.icon-twitter {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  font-weight: 900;
+  color: currentColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===========================
+   OK İLERİ / GERİ
+=========================== */
+.icon-arrow-right {
+  width: 14px;
+  height: 14px;
+  position: relative;
+}
+.icon-arrow-right::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: translateY(-50%) rotate(45deg);
+}
+.icon-arrow-right::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 12px;
+  height: 2px;
+  background: currentColor;
+  transform: translateY(-50%);
+  border-radius: 1px;
+}
+
+/* ===========================
+   KIRMIZI NOKTA / SATILDI
+=========================== */
+.icon-dot-red {
+  width: 10px;
+  height: 10px;
+  background: #ef4444;
+  border-radius: 50%;
+}
+.icon-dot-green {
+  width: 10px;
+  height: 10px;
+  background: #22c55e;
+  border-radius: 50%;
+}
+
+/* ===========================
+   GÜVENLİK KALKAN BADGE
+=========================== */
+.icon-shield-check {
+  width: 20px;
+  height: 22px;
+  position: relative;
+}
+.icon-shield-check::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: currentColor;
+  clip-path: polygon(50% 0%, 100% 15%, 100% 60%, 50% 100%, 0% 60%, 0% 15%);
+}
+.icon-shield-check::after {
+  content: '';
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 10px;
+  height: 5px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: translate(-55%, -60%) rotate(-45deg);
+}
+
+/* ===========================
+   PARA / FİYAT ETİKETİ
+=========================== */
+.icon-price-tag {
+  width: 16px;
+  height: 16px;
+  background: currentColor;
+  border-radius: 2px 2px 2px 0;
+  clip-path: polygon(0 0, 75% 0, 100% 50%, 75% 100%, 0 100%);
+  position: relative;
+}
+
+/* ===========================
+   GÖRÜNTÜLENME (EYE)
+=========================== */
+.icon-views {
+  width: 18px;
+  height: 12px;
+  position: relative;
+}
+.icon-views::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 2px solid currentColor;
+  border-radius: 50% / 100%;
+}
+.icon-views::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 4px;
+  height: 4px;
+  background: currentColor;
+  border-radius: 50%;
+}

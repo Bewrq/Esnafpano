@@ -1,0 +1,23 @@
+{
+  "name": "esnafpano",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Yerel esnaf, işletme ve iş ilanları platformu",
+  "author": { "name": "Bewrq (Replyfe)", "url": "https://github.com/Bewrq" },
+  "license": "SEE LICENSE IN docs/LICENSE.txt",
+  "workspaces": ["app/client", "app/server"],
+  "engines": { "node": "^20.19.0 || >=22.12.0", "npm": ">=10" },
+  "scripts": {
+    "start": "node global/scripts/start.cjs",
+    "dev": "node global/scripts/start.cjs",
+    "build": "node global/scripts/build.cjs",
+    "lint": "npm run lint --workspace=client",
+    "seed": "node global/scripts/seed.cjs",
+    "start:prod": "node global/scripts/start.cjs --production",
+    "screenshots": "node global/scripts/screenshots.mjs"
+  },
+  "devDependencies": {
+    "mongodb-memory-server-core": "10.4.3",
+    "playwright": "^1.58.0"
+  }
+}

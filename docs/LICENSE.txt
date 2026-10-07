@@ -1,0 +1,96 @@
+ESNAFPANO KİŞİSEL KULLANIM LİSANSI
+Sürüm 1.0 — 7 Ekim 2026
+
+Telif hakkı © 2026 Bewrq (Replyfe markası).
+GitHub: https://github.com/Bewrq
+Marka: Replyfe — http://replyfe.com/
+Bu metinde açıkça verilen sınırlı izinler dışında tüm haklar saklıdır.
+
+1. KAPSAM
+
+Bu lisans, hak sahibinin telif hakkını elinde bulundurduğu EsnafPano
+kaynak kodu, belgeleri ve özgün proje içerikleri için geçerlidir
+(birlikte "Yazılım"). Üçüncü taraf içeriklere bu lisansla yeni bir
+hak veya kısıtlama getirilmez.
+
+2. ÜCRETSİZ KİŞİSEL KULLANIM
+
+Gerçek kişiler Yazılımı kendi kişisel ve ticari olmayan amaçlarıyla
+ücretsiz kullanabilir, inceleyebilir, çalıştırabilir, bu kullanım için
+kopyalayabilir ve değiştirebilir. Kişisel öğrenme, deneme ve ticari
+olmayan kişisel projeler bu izne dahildir.
+
+Telif hakkı ve lisans bildirimleri, oluşturulan kopyalarda ve
+değiştirilmiş sürümlerde korunmalıdır. Yazılımın veya özgün proje
+içeriğinin kendinize ait olduğunu ileri süremezsiniz.
+
+3. YAZILI İZİN GEREKTİREN KULLANIMLAR
+
+Hak sahibinden önceden, kullanım kapsamını açıkça belirten yazılı izin
+alınmadıkça aşağıdaki işlemlere izin verilmez:
+
+  a) Yazılımın bir şirketin, işletmenin veya mesleki faaliyetin
+     ihtiyaçları için kullanılması; müşteri adına proje yapılması.
+  b) Yazılımdan doğrudan veya dolaylı gelir elde edilmesi; ücretli
+     hizmet, abonelik, reklam geliri, SaaS veya benzeri ticari amaçlarla
+     kullanılması ya da hizmet olarak sunulması.
+  c) Yazılımın, önemli bölümlerinin, değiştirilmiş sürümlerinin veya
+     özgün proje içeriğini içeren türev ürünlerin satılması, ticari
+     olarak dağıtılması, kiralanması veya alt lisanslanması.
+  d) 4. bölümdeki GitHub istisnası dışında Yazılımın veya değiştirilmiş
+     sürümlerinin yeniden dağıtılması ya da başka bir lisans altında
+     paylaşılması.
+
+Ücretsiz sunulması, işletme veya müşteri için yapılan bir kullanımı
+kendiliğinden kişisel kullanım haline getirmez.
+
+Yazılı izin talepleri için https://github.com/Bewrq veya
+http://replyfe.com/ üzerinden hak sahibiyle iletişim kurun. İzin
+belgesinin kişi/kurumu, izin verilen işlemleri ve kapsamı açıkça
+belirtmesi gerekir. İzin verilmemiş konulardaki haklar saklıdır.
+
+4. GITHUB ÜZERİNDE PAYLAŞIM
+
+GitHub'ın hizmet koşulları uyarınca tanınan görüntüleme ve platform
+üzerindeki fork hakları saklıdır. Bu haklar, ticari kullanım, satış
+veya farklı koşullarla yeniden lisanslama izni vermez. Forklarda bu
+lisans ve telif bildirimleri korunmalıdır.
+
+Deponun herkese açık olması, kaynak kodun indirilebilmesi, yıldız
+verilmesi veya fork oluşturulması tek başına ticari izin değildir.
+
+5. ÜÇÜNCÜ TARAF HAKLARI VE MARKA
+
+Bağımlılıklar, harici fotoğraflar, yazı tipleri, harita/QR servisleri
+ve diğer üçüncü taraf içerikler kendi hak sahiplerinin lisans ve
+koşullarına tabidir. Bunların kullanım haklarını ayrıca kontrol edin;
+bu lisans onların mevcut izinlerini daraltmaz veya genişletmez.
+
+Bu lisans, Bewrq veya Replyfe adının, markasının ya da logosunun bir
+ürün veya hizmetin resmî onay aldığı izlenimi verecek şekilde
+kullanılmasına izin vermez. Gerekli kaynak ve telif atıfları saklıdır.
+
+6. GARANTİ VE SORUMLULUK
+
+Yazılım mevcut haliyle sunulur. Kanunen zorunlu haklar ve sorumluluklar
+saklı kalmak üzere, belirli bir amaca uygunluk, kesintisiz çalışma veya
+hatasızlık garantisi verilmez. Hak sahibinin sorumluluğu yalnızca
+yürürlükteki hukukun izin verdiği ölçüde sınırlandırılır.
+
+7. İHLAL VE SAKLI HAKLAR
+
+Bu lisansa aykırı kullanım için herhangi bir izin verilmiş değildir.
+Hak sahibi, ihlal halinde yürürlükteki hukukun tanıdığı başvuru ve
+talep haklarını saklı tutar. Bu metin kanunen vazgeçilemeyen hakları,
+telif hakkının yasal istisnalarını veya sınırlamalarını kaldırmaz.
+
+Bu lisans bir dava sonucunu, tazminatı veya başka bir hukuki sonucu
+garanti etmez. Hak sahibinin hak sahibi olmadığı içerik üzerinde
+telif hakkı iddiası oluşturmaz.
+
+8. LİSANSIN NİTELİĞİ
+
+Bu, kişisel ve ticari olmayan kullanıma sınırlı izin veren özel bir
+lisanstır. MIT lisansı veya OSI onaylı bir açık kaynak lisansı değildir.
+Bu metin dışındaki kullanım hakları ancak hak sahibinin ayrıca verdiği
+yazılı izinle doğar.

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import './icons.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: #F3F3F3;
+    color: #111111;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-amber-400 hover:bg-amber-500 text-black font-semibold px-5 py-2.5 rounded-lg transition-all duration-200 shadow-sm hover:shadow-md active:scale-95 cursor-pointer;
+  }
+
+  .btn-outline {
+    @apply border-2 border-amber-400 hover:bg-amber-400 text-amber-600 hover:text-black font-semibold px-5 py-2.5 rounded-lg transition-all duration-200 cursor-pointer;
+  }
+
+  .btn-whatsapp {
+    @apply bg-green-500 hover:bg-green-600 text-white font-semibold px-4 py-2 rounded-lg transition-all duration-200 flex items-center gap-2 cursor-pointer;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-card hover:shadow-card-hover transition-all duration-300 overflow-hidden border border-gray-100;
+  }
+
+  .input-field {
+    @apply w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent transition-all duration-200 bg-white text-gray-900;
+  }
+
+  .badge-featured {
+    @apply absolute top-2 left-2 bg-amber-400 text-black text-xs font-bold px-2 py-1 rounded z-10 uppercase tracking-wide;
+  }
+
+  .category-tab {
+    @apply px-4 py-2 rounded-full text-sm font-medium cursor-pointer transition-all duration-200 border;
+  }
+
+  .category-tab-active {
+    @apply bg-amber-400 border-amber-400 text-black;
+  }
+
+  .category-tab-inactive {
+    @apply bg-white border-gray-300 text-gray-600 hover:border-amber-400 hover:text-amber-600;
+  }
+
+  .section-title {
+    @apply text-2xl font-bold text-gray-900 border-b-4 border-amber-400 pb-2 inline-block;
+  }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #FF9900;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E68A00;
+}
+
+/* Page Transition */
+.page-enter {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
